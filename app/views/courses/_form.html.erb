@@ -16,6 +16,8 @@
     <%= f.label :topic, 'I want to learn...' %><br />
     <%= f.text_field :topic %>
   </div>
+  
+  <%= link_to_function 'continue >>', "$('#step_1').hide(); $('#step_2').show();"%>
 </div>
 
 <div id="step_2">
@@ -23,6 +25,8 @@
     <%= f.label :teachers_email %><br />
     <%= f.text_field :teachers_email %>
   </div>
+
+<%= link_to_function 'continue >>', "$('#step_2').hide(); $('#step_7').show();"%>
 </div>
 
 <div id="step_3">
@@ -58,9 +62,16 @@
     <%= f.label :body %><br />
     <%= f.text_area :body %>
   </div>
-</div>
 
   <div class="actions">
     <%= f.submit %>
   </div>
+</div>
 <% end %>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('#step_2, #step_3, #step_4, #step_5, #step_6, #step_7').hide();
+	});
+</script>
