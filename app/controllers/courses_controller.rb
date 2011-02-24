@@ -41,10 +41,10 @@ class CoursesController < ApplicationController
   # POST /courses.xml
   def create
     @course = Course.new(params[:course])
-    UserMailer.welcome_email(@course.teachers_email, "Test Subject").deliver
-
+    
     respond_to do |format|
       if @course.save
+        UserMailer.welcome_email(@course.teachers_email, "You have a new class request!", @course.topic).deliver
         format.html { redirect_to(@course, :notice => 'Course was successfully created.') }
         format.xml  { render :xml => @course, :status => :created, :location => @course }
       else
