@@ -41,6 +41,7 @@ class CoursesController < ApplicationController
   # POST /courses.xml
   def create
     @course = Course.new(params[:course])
+    UserMailer.welcome_email(@course.teachers_email, "Test Subject").deliver
 
     respond_to do |format|
       if @course.save

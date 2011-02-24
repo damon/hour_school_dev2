@@ -1,4 +1,6 @@
 HourSchool::Application.routes.draw do
+  resources :users
+
   resources :courses
   root :to => "courses#new"
 
