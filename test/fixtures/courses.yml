@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  topic: MyString
+  teachers_email: MyString
+  start_time: 2011-02-23 21:11:32
+  end_time: 2011-02-23 21:11:32
+  student_email: MyText
+  price: 9.99
+  body: MyText
+
+two:
+  topic: MyString
+  teachers_email: MyString
+  start_time: 2011-02-23 21:11:32
+  end_time: 2011-02-23 21:11:32
+  student_email: MyText
+  price: 9.99
+  body: MyText
