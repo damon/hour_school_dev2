@@ -22,7 +22,7 @@
 
 <div id="step_2">
   <div class="field">
-    <%= f.label :teachers_email %><br />
+    <%= f.label :teachers_email, 'Who do you think might be able to teach this class? Enter his/her email address here.' %><br />
     <%= f.text_field :teachers_email %>
   </div>
 
@@ -31,7 +31,7 @@
 
 <div id="step_3">
   <div class="field">
-    <%= f.label :start_time %><br />
+    <%= f.label :start_time, 'When are you available? Enter the start date and time here.' %><br />
     <%= f.datetime_select :start_time %>
   </div>
 
@@ -40,7 +40,7 @@
 
 <div id="step_4">
   <div class="field">
-    <%= f.label :end_time %><br />
+    <%= f.label :end_time, 'How about the end date and time?' %><br />
     <%= f.datetime_select :end_time %>
   </div>
 
@@ -49,7 +49,7 @@
 
 <div id="step_5">
   <div class="field">
-    <%= f.label :student_email %><br />
+    <%= f.label :student_email, "Do you want to invite any friends with you? Enter their emails here." %><br />
     <%= f.text_area :student_email %>
   </div>
   
@@ -58,7 +58,7 @@
 
 <div id="step_6">
   <div class="field">
-    <%= f.label :price %><br />
+    <%= f.label :price, "You know your friend's time is valuable. Add a cover charge! Maybe they will go buy some snacks. We suggest $10/person." %><br />
     <%= f.text_field :price %>
   </div>
   
@@ -67,7 +67,7 @@
 
 <div id="step_7">
   <div class="field">
-    <%= f.label :body %><br />
+    <%= f.label :body, "Add a message:" %><br />
     <%= f.text_area :body %>
   </div>
 
