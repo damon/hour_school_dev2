@@ -44,7 +44,7 @@ class CoursesController < ApplicationController
     
     respond_to do |format|
       if @course.save
-        UserMailer.welcome_email(@course.teachers_email, "You have a new class request!", @course.topic, @course.body).deliver
+        UserMailer.welcome_email(@course).deliver
         format.html { redirect_to(@course, :notice => 'Course was successfully created.') }
         format.xml  { render :xml => @course, :status => :created, :location => @course }
       else

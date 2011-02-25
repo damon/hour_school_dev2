@@ -1,2 +1,7 @@
-  <%= @topic %>
-  <%= @messagebody %>
+Hi <%= @course.teacher_email %>,
+
+<%= @course.student_email %> thinks you can teach a <%= @course.topic %> class!
+
+Here is a message from you:
+<%= @course.body %>
+
