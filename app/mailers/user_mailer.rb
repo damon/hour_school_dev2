@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
   def welcome_email(course)
       @course = course
-      mail(:to => @course.teacher_email,
+      mail(:to => @course.teachers_email,
            :subject => "You have a new class request!")
   end
   
