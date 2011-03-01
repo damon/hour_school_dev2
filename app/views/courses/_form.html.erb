@@ -11,13 +11,19 @@
     </div>
   <% end %>
 
-<div id="step_1">
-  <div class="field">
-    <%= f.label :topic, 'I want to learn...' %><br />
-    <%= f.text_field :topic %>
-  </div>
+
   
-  <%= link_to_function 'continue >>', "$('#step_1').hide(); $('#step_2').show();"%>
+<div id="step_1">
+  <div class="homepage_title">
+    <%= f.label :topic, 'I want to learn:' %><br />
+    <form>
+    <input type="text" name="field" class="textInput" />
+    </form> 
+    <%= f.text_field :topic %>
+
+<%= link_to_function 'go!', "$('#step_1').hide(); $('#step_2').show();"%>
+</div>
+  
 </div>
 
 <div id="step_2">

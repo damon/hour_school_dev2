@@ -19,13 +19,14 @@ a { text-decoration: none;
      color: #000;}
 
 a:visited {
-     text-decoration: none;
-     color: #000;
-}
+	     text-decoration: none;
+	     color: #000;
+	}
+
 
 #logo {
-
-	width: 760px; 
+	float: clear;
+	width: 800p; 
 	 margin: 0 auto; 
 	 text-align: center; }
      padding-top: 30px;
@@ -37,20 +38,29 @@ a:visited {
      margin:auto;
 }
 
-#step_1 {
+.homepage_title {
 	
 	 float: clear;
-     width: 800px;
+     width: 600px;
      font-size: 2em;
      line-height: 1.225em;
 	 margin: 0 auto; 
 	 text-align: center;
      padding-top: 40px;
-    
+
 }
 
+
+.textInput
+{
+	border: 1px dashed #6BB2AC;
+	font-size: 1em;
+}
+
+
+
+
 #otherpeople {
-	
 	 float: clear;
      width: 800px;
      line-height: 1.225em;
@@ -65,25 +75,34 @@ a:visited {
 }
 
 #footer_tagline {
-	width: 760px; 
+	width: 100%; 
+	height: 70px;
 	 margin: 0 auto; 
 	 text-align: center;
-
+	background-color: #6BB2AC;
+	color: #FFF;
+	font-size: 2em;
+	line-height:3em;
 }
 
 #footer_links {
-	 width: 760px; 
+	 width: 100%; 
+	height:50px;
 	 margin: 0 auto; 
 	 text-align: center; 
-	color: #999;
-
+	color: #98c8d1;
+	background-color: #6BB2AC;
+	line-height:2em;
 }
 
 #footer_copyright {
-	 width: 760px; 
+	 width: 100%;
+	height: 80px; 
 	 margin: 0 auto; 
 	 text-align: center; 
 	color: #999;
+	background-color: #593D28;
+	line-height:3em;
 
 }
 
