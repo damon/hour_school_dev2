@@ -14,12 +14,9 @@
 
   
 <div id="step_1">
-  <div class="homepage_title">
+  <div class="homepage_text">
     <%= f.label :topic, 'I want to learn:' %><br />
-    <form>
-    <input type="text" name="field" class="textInput" />
-    </form> 
-    <%= f.text_field :topic %>
+    <%= f.text_field :topic, :class => "textInput" %>
 
 <%= link_to_function 'go!', "$('#step_1').hide(); $('#step_2').show();"%>
 </div>

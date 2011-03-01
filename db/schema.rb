@@ -10,7 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110224051910) do
+ActiveRecord::Schema.define(:version => 20110301235333) do
+
+  create_table "alphasignups", :force => true do |t|
+    t.string   "course"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "courses", :force => true do |t|
     t.string   "topic"

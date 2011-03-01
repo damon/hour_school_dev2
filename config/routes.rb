@@ -1,4 +1,6 @@
 HourSchool::Application.routes.draw do
+  resources :alphasignups
+
   resources :users
 
   resources :courses
