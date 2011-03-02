@@ -11,28 +11,27 @@
     </div>
   <% end %>
 
-<div id="homepage_text">
-  <div class="field">
+<div id="step_1">
+  <div class="homepage_text">
     <%= f.label :course, 'I want to learn:' %><br />
-    <%= f.text_field :course %>
-  </div>
-  <%= link_to_function 'go!', "$('#step_1').hide(); $('#step_2').show();"%>
+    <%= f.text_field :course, :class => "textInput" %>
+<%= link_to_function 'go!', "$('#step_1').hide(); $('#step_2').show();"%>
+</div>
 </div>  
   
-<div id="step2">
-  <div class="field">
-    <%= f.label :email 'What is your email?' %><br />
-    <%= f.text_field :email %>
-  </div>
-</div>  
-
+<div id="step_2">
+  <div class="homepage_text">
+    <%= f.label :email, 'What is your email?' %><br />
+    <%= f.text_field :email, :class => "textInput" %>
   <div class="actions">
     <%= f.submit %>
   </div>
+  </div>
+</div>
 <% end %>
 
 <script type="text/javascript">
 	$(document).ready(function() {
-    $('#step_2').hide();
+    $('#step_2, #step_3, #step_4, #step_5, #step_6, #step_7').hide();
 	});
 </script>

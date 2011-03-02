@@ -4,7 +4,7 @@ HourSchool::Application.routes.draw do
   resources :users
 
   resources :courses
-  root :to => "courses#new"
+  root :to => "alphasignups#new"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

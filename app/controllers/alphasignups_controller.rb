@@ -44,7 +44,7 @@ class AlphasignupsController < ApplicationController
 
     respond_to do |format|
       if @alphasignup.save
-        format.html { redirect_to(@alphasignup, :notice => 'Alphasignup was successfully created.') }
+        format.html { redirect_to(@alphasignup, :notice => 'Thank you for signing up.') }
         format.xml  { render :xml => @alphasignup, :status => :created, :location => @alphasignup }
       else
         format.html { render :action => "new" }
