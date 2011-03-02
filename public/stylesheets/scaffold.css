@@ -19,7 +19,7 @@ div.field, div.actions {
 }
 
 #notice {
-  color: green;
+  color: #666;
 }
 
 .field_with_errors {

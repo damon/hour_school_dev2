@@ -13,23 +13,24 @@
 
 <div id="step_1">
   <div class="homepage_text">
-    <%= f.label :course, 'I want to learn:' %><br />
-    <%= f.text_field :course, :class => "textInput" %>
-<%= link_to_function 'go!', "$('#step_1').hide(); $('#step_2').show();"%>
+    <%= f.label :course, 'I want to learn:' %><br>
+    <%= f.text_field :course, :class => "textInput" %><br>
+    <%= link_to_function (image_tag("../../../images/HourSchool_Viz_Home_Alpha_v1_03.png", :id => "applebutton")),      "$('#step_1').hide(); $('#step_2').show();" %>
 </div>
-<div id="otherpeople">
-Other people have said:
-<a href="#">boxing</a>, <a href="#">doodling</a>, <a href="#">skateboarding</a>...
+<div id="smalltext">
+Other people have said:<br><br><br>
+<a href="#">boxing</a>, <a href="#">doodling</a>, <a href="#">skateboarding</a>
 </div>
 </div>  
   
 <div id="step_2">
   <div class="homepage_text">
-    <%= f.label :email, 'What is your email?' %><br />
-    <%= f.text_field :email, :class => "textInput" %>
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.label :email, 'What is your email?' %><br>
+    <%= f.text_field :email, :class => "textInput" %><br>
+    <%= f.submit "sign up", :class => "actions" %>
   </div>
+  <div id="smalltext">
+ We're currently building our alpha. Sign up and we'll notify you when we launch!
   </div>
 </div>
 <% end %>

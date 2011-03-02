@@ -56,27 +56,41 @@ a:visited {
 	text-align: center;
     padding-top: 30px;
 color: #666;
+border: none;
 	
 }
 
-.field {
-	 float: clear;
-     width: 600px;
-	 margin: 0 auto; 
-	 text-align: center;
-     padding-top: 40px;
-
-}
-
-
 .textInput {
-	border: 1px dashed #6BB2AC;
+	border: 2px dashed #6BB2AC;
 	font-size: 1em;
 	line-height: 1em;
+	width: 400px;
+	float: none; 
+	margin-top: 15px;
 }
 
+.actions {
+	width: 38px;/* Width of button image */
+	height: 40px;/* Height of button image */
+	padding: 40px 0 0;
+	margin-top: 10px;
+	margin-bottom: 0;
+	border: 0;
+	background: transparent url("../../../images/HourSchool_Viz_Home_Alpha_v1_03.png") no-repeat;
+	overflow: hidden;
+	cursor: pointer; /* hand-shaped cursor */
+	cursor: hand; /* for IE 5.x */
+}
 
-#otherpeople {
+#applebutton {
+	margin-top: 10px;
+	border-style: solid;
+	border-color: white;
+	cursor: pointer; /* hand-shaped cursor */
+	cursor: hand; /* for IE 5.x */
+}
+
+#smalltext {
 	 float: clear;
      width: 800px;
      line-height: 0.5em;
@@ -88,7 +102,8 @@ color: #666;
 
 #footer_image {
 	padding-left: 550px;
-	margin-bottom: -4px;
+	margin-bottom: -3.5px;
+	border: 0px;
 }
 
 #footer_tagline {
@@ -100,6 +115,7 @@ color: #666;
 	color: #FFF;
 	font-size: 2em;
 	line-height:3em;
+	letter-spacing: 2px;
 }
 
 #footer_links {
@@ -122,36 +138,24 @@ color: #666;
 
 }
 
+
+a:hover { color: #fff; background-color:#F46F25; }
+
 hr {
      border: none 0;
      border-top: 1px dashed #999;
      width: 98%;
 }
 
-/*......HOMEPAGE......*/
-
-
-
-div.story_step {
-     float: left;
-     width: 235px;
-     padding-left: 35px;
-}
-    
-.story_title {
-     text-transform: uppercase;
-     letter-spacing: 1.5px;
-     font-weight: bold;
-}
-    
-p#lead_copy {
-     float: clear;
+p#notice {
+	float: clear;
      width: 800px;
-     font-size: 3em;
-     line-height: 1.225em;
-     color: #999;
-     padding-left: 50px;
-     padding-top: 120px;
-     }
+     line-height: 1em;
+	 margin: 0 auto; 
+	 text-align: center;
+     padding-top: 30px;
+	color: #000;
+	
+}
 
 
