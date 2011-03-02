@@ -14,8 +14,8 @@
 <div id="step_1">
   <div class="homepage_text">
     <%= f.label :course, 'I want to learn:' %><br>
-    <%= f.text_field :course, :class => "textInput" %><br>
-    <%= link_to_function (image_tag("../../../images/HourSchool_Viz_Home_Alpha_v1_03.png", :id => "applebutton")),      "$('#step_1').hide(); $('#step_2').show();" %>
+    <%= f.text_field :course, :id => "textInput" %><br>
+    <%= link_to_function (image_tag("../../../images/HourSchool_Viz_Home_Alpha_v1_03.png", :id => "applebutton")),      "$('#applebutton').hide(); $('#smalltext').hide(); $('#step_2').show();" %>
 </div>
 <div id="smalltext">
 Other people have said:<br><br><br>
@@ -26,7 +26,7 @@ Other people have said:<br><br><br>
 <div id="step_2">
   <div class="homepage_text">
     <%= f.label :email, 'What is your email?' %><br>
-    <%= f.text_field :email, :class => "textInput" %><br>
+    <%= f.text_field :email, :id => "textInput" %><br>
     <%= f.submit "sign up", :class => "actions" %>
   </div>
   <div id="smalltext">

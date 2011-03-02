@@ -60,7 +60,7 @@ border: none;
 	
 }
 
-.textInput {
+#textInput {
 	border: 2px dashed #6BB2AC;
 	font-size: 1em;
 	line-height: 1em;
@@ -102,7 +102,7 @@ border: none;
 
 #footer_image {
 	padding-left: 550px;
-	margin-bottom: -3.5px;
+	margin-bottom: -4px;
 	border: 0px;
 }
 
