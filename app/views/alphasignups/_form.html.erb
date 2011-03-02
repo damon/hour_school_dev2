@@ -17,6 +17,10 @@
     <%= f.text_field :course, :class => "textInput" %>
 <%= link_to_function 'go!', "$('#step_1').hide(); $('#step_2').show();"%>
 </div>
+<div id="otherpeople">
+Other people have said:
+<a href="#">boxing</a>, <a href="#">doodling</a>, <a href="#">skateboarding</a>...
+</div>
 </div>  
   
 <div id="step_2">
@@ -24,7 +28,7 @@
     <%= f.label :email, 'What is your email?' %><br />
     <%= f.text_field :email, :class => "textInput" %>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit, "Sign up" %>
   </div>
   </div>
 </div>
