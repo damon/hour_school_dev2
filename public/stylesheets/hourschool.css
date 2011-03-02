@@ -85,9 +85,10 @@ border: none;
 #applebutton {
 	margin-top: 10px;
 	border-style: solid;
-	border-color: white;
+	border-color: #FCF9F7;
 	cursor: pointer; /* hand-shaped cursor */
 	cursor: hand; /* for IE 5.x */
+
 }
 
 #smalltext {
