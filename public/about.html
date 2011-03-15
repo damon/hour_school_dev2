@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About HourSchool</title>
+  <style type="text/css">
+  /*......RESET.......*/
+  /*...Ensures default variables in different browsers are the same...*/
+  * {
+  	margin:0px;
+  	padding:0px;
+  }
+
+
+  /*......GENERAL......*/
+
+  @font-face {
+      font-family: 'MuseoSans500';
+      src: url('../fonts/museosans_500-webfont.eot');
+      src: url('../fonts/museosans_500-webfont.eot?iefix') format('eot'),
+           url('../fonts/museosans_500-webfont.woff') format('woff'),
+           url('../fonts/museosans_500-webfont.ttf') format('truetype'),
+           url('../fonts/museosans_500-webfont.svg#webfontJyZM8OCB') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+  }
+
+  body { background-color: #FCF9F7; color: #000;
+       font-family: 'MuseoSans500';}
+
+  a { text-decoration: none;
+       color: #000;}
+
+  a:visited {
+  	     text-decoration: none;
+  	     color: #4C8780;
+  	}
+
+
+  #logo {
+  	float: clear;
+  	width: 800p; 
+  	 margin: 0 auto; 
+  	 text-align: center; 
+       margin-top: 40px;
+  	}
+
+
+  #container{
+       width:900px;
+       margin:auto;
+  }
+
+
+  .homepage_text {
+  	float: clear;
+      width: 600px;
+      font-size: 2em;
+      line-height: 1.225em;
+  	margin: 0 auto; 
+  	text-align: center;
+      padding-top: 30px;
+  color: #666;
+  border: none;
+
+  }
+
+  #textInput {
+  	border: 2px dashed #6BB2AC;
+  	font-size: 1em;
+  	line-height: 1em;
+  	width: 400px;
+  	float: none; 
+  	margin-top: 15px;
+  }
+
+  .actions {
+  	width: 38px;/* Width of button image */
+  	height: 40px;/* Height of button image */
+  	padding: 40px 0 0;
+  	margin-top: 10px;
+  	margin-bottom: 0;
+  	border: 0;
+  	background: transparent url("../../../images/HourSchool_Viz_Home_Alpha_v1_03.png") no-repeat;
+  	overflow: hidden;
+  	cursor: pointer; /* hand-shaped cursor */
+  	cursor: hand; /* for IE 5.x */
+  }
+
+  #applebutton {
+  	margin-top: 10px;
+  	border-style: solid;
+  	border-color: #FCF9F7;
+  	cursor: pointer; /* hand-shaped cursor */
+  	cursor: hand; /* for IE 5.x */
+
+  }
+
+  #smalltext {
+  	 float: clear;
+       width: 800px;
+       line-height: 0.5em;
+  	 margin: 0 auto; 
+  	 text-align: center;
+       padding-top: 30px;
+
+  }
+  
+  #aboutpage{
+  		position: relative;
+         width: 450px;
+         top: 0px;
+         left: 0px;
+       line-height: 0.5em;
+  	 margin: 0 auto; 
+  	color: #666;
+  
+
+  }
+
+  #footer_image {
+  	padding-left: 550px;
+  	margin-bottom: -4px;
+  	border: 0px;
+  }
+
+  #footer_tagline {
+  	width: 100%; 
+  	height: 70px;
+  	 margin: 0 auto; 
+  	 text-align: center;
+  	background-color: #6BB2AC;
+  	color: #FFF;
+  	font-size: 2em;
+  	line-height:3em;
+  	letter-spacing: 2px;
+  }
+
+  #footer_links {
+  	 width: 100%; 
+  	height:50px;
+  	 margin: 0 auto; 
+  	 text-align: center; 
+  	color: #4C8780;
+  	background-color: #6BB2AC;
+  	line-height:2em;
+  }
+
+  #footer_copyright {
+  	 width: 100%;
+  	 margin: 0 auto; 
+  	 text-align: center; 
+  	color: #999;
+  	background-color: #593D28;
+  	line-height:3em;
+
+  }
+
+
+  a:hover { color: #fff; background-color:#F46F25; }
+
+  hr {
+       border: none 0;
+       border-top: 1px dashed #999;
+       width: 98%;
+  }
+
+  p#notice {
+  	float: clear;
+       width: 800px;
+       line-height: 1em;
+  	 margin: 0 auto; 
+  	 text-align: center;
+       padding-top: 30px;
+  	color: #000;
+
+  }
+
+
+  body, p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size:   13px;
+    line-height: 18px;
+  }
+
+  pre {
+    background-color: #FCF9F7;
+    padding: 10px;
+    font-size: 11px;
+  }
+
+  a { color: #666; }
+  a:visited { color: #666; }
+  a:hover { color: #fff; background-color:#F46F25; }
+
+  div.field, div.actions {
+    margin-bottom: 10px;
+  }
+
+  #notice {
+    color: #666;
+  }
+
+  .field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+  }
+
+  #error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+  }
+
+  #error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  #error_explanation ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+  
+  </style>
+</head>
+<link rel="icon" 
+      type="image/png" 
+      href="../../../images/favicon.png">
+<body>
+  
+  <div id="logo" ><a href="../../"><img src ="../../../images/HourSchool_Viz_Home_Alpha_v1_01.png" border="0"/></a></div>
+  <br>
+  <div id="aboutpage"><table><tr><td>
+  <p>HourSchool is a service that helps you find someone in your social network to teach you what you want to learn.</p><br>
+<p>Traditional classrooms facilitate one-way knowledge transfer, where students passively consume. We believe learning should be social, where students learn from, and with, each other. </p><br>
+<p>Everyone has knowledge to share and the ability to share it.  HourSchool facilitates friend-lead knowledge sharing, in a fun, easy, and social way.  Learn from your friends, one hour at a time.</p>
+</td></tr></table>
+</div>
+  
+  <br><br><br>
+
+  <div id="footer_image">
+   <img src ="../../../images/HourSchool_Viz_Homepage_09_JP_07.png" />
+  </div>
+
+  <div id="footer_tagline">
+  Learn to Teach, Teach to Learn 
+  </div>
+
+  <div id="footer_links">
+  <a href="/about.html">About HourSchool</a> | <a href="http://www.twitter.com/hourschool">Follow Us</a>
+  </div>
+
+  <div id="footer_copyright">
+  © HourSchool Inc. 2011
+  </div>
+  
+  
+</body>
+</html>
