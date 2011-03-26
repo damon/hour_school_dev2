@@ -69,6 +69,7 @@ class AlphasignupsController < ApplicationController
     end
   end
 
+
   # DELETE /alphasignups/1
   # DELETE /alphasignups/1.xml
   def destroy
