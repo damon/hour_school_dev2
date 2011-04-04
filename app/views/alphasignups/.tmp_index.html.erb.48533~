@@ -1,0 +1,25 @@
+<h1>Listing alphasignups</h1>
+
+<table>
+  <tr>
+    <th>Course</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @alphasignups.each do |alphasignup| %>
+  <tr>
+    <td><%= alphasignup.course %></td>
+    <td><%= alphasignup.email %></td>
+    <td><%= link_to 'Show', alphasignup %></td>
+    <td><%= link_to 'Edit', edit_alphasignup_path(alphasignup) %></td>
+    <td><%= link_to 'Destroy', alphasignup, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Alphasignup', new_alphasignup_path %>

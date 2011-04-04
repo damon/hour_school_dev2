@@ -60,7 +60,7 @@ border: none;
 	
 }
 
-#textInput {
+.textInput {
 	border: 2px dashed #6BB2AC;
 	font-size: 1em;
 	line-height: 1em;
@@ -162,4 +162,6 @@ p#notice {
 	
 }
 
-
+#alphasignup_submit:hover {
+	color: #fff; background-color:#F46F25; border-bottom:solid 6px #F46F25;
+}

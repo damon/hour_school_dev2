@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loadpath>
+	<pathentry path="" type="src"/>
+	<pathentry path="GEM_LIB/addressable-2.2.4/lib" type="var"/>
+	<pathentry path="GEM_LIB/actionpack-3.0.5/lib" type="var"/>
+	<pathentry path="GEM_LIB/RedCloth-4.1.1/lib" type="var"/>
+</loadpath>
