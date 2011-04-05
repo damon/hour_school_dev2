@@ -1,11 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
+  provider: MyString
+  uid: MyString
   name: MyString
-  email: MyString
-  login: MyString
 
 two:
+  provider: MyString
+  uid: MyString
   name: MyString
-  email: MyString
-  login: MyString

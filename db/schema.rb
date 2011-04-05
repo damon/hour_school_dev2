@@ -13,30 +13,30 @@
 ActiveRecord::Schema.define(:version => 20110301235333) do
 
   create_table "alphasignups", :force => true do |t|
-    t.string   "course"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "course"
+    t.string    "email"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "courses", :force => true do |t|
-    t.string   "topic"
-    t.string   "teachers_email"
-    t.datetime "start_time"
-    t.datetime "end_time"
-    t.text     "student_email"
-    t.decimal  "price"
-    t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "topic"
+    t.string    "teachers_email"
+    t.timestamp "start_time"
+    t.timestamp "end_time"
+    t.text      "student_email"
+    t.decimal   "price"
+    t.text      "body"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
   create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "login"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string    "name"
+    t.string    "email"
+    t.string    "login"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
   end
 
 end
